@@ -1,7 +1,7 @@
 import { createMacro, MacroError } from 'babel-macros';
 import ms from 'ms';
 
-module.exports = createMacro(({ babel: { types: t }, references: { default: paths } }) => {
+export default createMacro(({ babel: { types: t }, references: { default: paths } }) => {
   paths.forEach(({ parentPath }) => {
     let value = null;
     if (parentPath.type === 'CallExpression') {
