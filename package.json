@@ -1,6 +1,6 @@
 {
   "name": "ms.macro",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert various time formats to milliseconds at build time in Babel.",
   "main": "lib/ms.macro.js",
   "scripts": {
