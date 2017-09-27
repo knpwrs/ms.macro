@@ -33,3 +33,12 @@ test('TaggedTemplateExpression', (t) => {
   const output = run(input);
   t.is(output, expected);
 });
+
+test('CallExpression Error', (t) => {
+  const input = stripIndent`
+    import ms from './ms.macro';
+    const ONE_DAY = ms('1 da');
+  `;
+  const error = t.throws(() => run(input));
+  t.is(error.message, `${__filename}: Invalid input given to ms.macro at line 2`);
+});
