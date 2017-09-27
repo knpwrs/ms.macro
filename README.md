@@ -4,10 +4,9 @@
 [![devDependency Status](https://img.shields.io/david/dev/knpwrs/ms.macro.svg)](https://david-dm.org/knpwrs/ms.macro#info=devDependencies)
 [![Greenkeeper badge](https://badges.greenkeeper.io/knpwrs/ms.macro.svg)](https://greenkeeper.io/)
 [![Build Status](https://img.shields.io/travis/knpwrs/ms.macro.svg)](https://travis-ci.org/knpwrs/ms.macro)
-[![Code Coverage](https://img.shields.io/coveralls/knpwrs/ms.macro.svg)](https://coveralls.io/github/knpwrs/ms.macro)
 [![Npm Version](https://img.shields.io/npm/v/ms.macro.svg)](https://www.npmjs.com/package/ms.macro)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Badges](https://img.shields.io/badge/badges-8-orange.svg)](http://shields.io/)
+[![Badges](https://img.shields.io/badge/badges-7-orange.svg)](http://shields.io/)
 
 Convert various time formats to milliseconds at build time in Babel.
 
