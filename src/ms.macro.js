@@ -1,14 +1,19 @@
 import { createMacro, MacroError } from 'babel-macros';
 import ms from 'ms';
 
+const getValue = (path) => {
+  if (path.type === 'CallExpression') {
+    return path.node.arguments[0].value;
+  }
+  if (path.type === 'TaggedTemplateExpression') {
+    return path.node.quasi.quasis[0].value.cooked;
+  }
+  return null;
+};
+
 export default createMacro(({ babel: { types: t }, references: { default: paths } }) => {
   paths.forEach(({ parentPath }) => {
-    let value = null;
-    if (parentPath.type === 'CallExpression') {
-      value = parentPath.node.arguments[0].value;
-    } else if (parentPath.type === 'TaggedTemplateExpression') {
-      value = parentPath.node.quasi.quasis[0].value.cooked;
-    }
+    const value = getValue(parentPath);
     if (value) {
       const newValue = ms(value);
       if (newValue) {
