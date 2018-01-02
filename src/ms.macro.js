@@ -1,4 +1,4 @@
-import { createMacro, MacroError } from 'babel-macros';
+import { createMacro, MacroError } from 'babel-plugin-macros';
 import ms from 'ms';
 
 const getValue = (path) => {
