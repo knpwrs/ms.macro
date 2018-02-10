@@ -1,5 +1,5 @@
 import test from 'ava';
-import macroPlugin from 'babel-macros';
+import macroPlugin from 'babel-plugin-macros';
 import { transform } from 'babel-core';
 import { stripIndent } from 'common-tags';
 
