@@ -12,8 +12,8 @@ Convert various time formats to milliseconds at build time in Babel.
 
 ## Usage
 
-Simply install and configure [`babel-macros`] and then use `ms.macro` the same
-way you use [`ms`].
+Simply install and configure [`babel-plugin-macros`] and then use `ms.macro`
+the same way you use [`ms`].
 
 ## Example
 
@@ -81,5 +81,5 @@ const str = ms(172800000);
 
 **MIT**
 
-[`babel-macros`]: https://github.com/kentcdodds/babel-macros "babel-macros"
+[`babel-plugin-macros`]: https://github.com/kentcdodds/babel-plugin-macros "babel-plugin-macros"
 [`ms`]: https://github.com/zeit/ms "ms"
