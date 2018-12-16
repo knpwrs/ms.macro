@@ -12,7 +12,6 @@
     "prepack": "npm run build"
   },
   "ava": {
-    "babel": "inherit",
     "require": "babel-register"
   },
   "repository": {
@@ -33,7 +32,7 @@
     "ms": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.1",
