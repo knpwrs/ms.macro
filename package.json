@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/knpwrs/ms.macro#readme",
   "dependencies": {
-    "babel-plugin-macros": "^2.0.0",
+    "babel-plugin-macros": "^2.7.0",
     "ms": "^2.0.0"
   },
   "devDependencies": {
