@@ -11,6 +11,7 @@ const run = code => transform(code, {
 
 {
   const expected = stripIndent`
+    const ZERO_DAYS = 0;
     const ONE_DAY = 86400000;
     const TWO_DAYS = 172800000;
   `;
@@ -18,6 +19,7 @@ const run = code => transform(code, {
   test('CallExpression', (t) => {
     const input = stripIndent`
       import ms from './ms.macro';
+      const ZERO_DAYS = ms('0 days');
       const ONE_DAY = ms('1 day');
       const TWO_DAYS = ms('2 days');
     `;
@@ -28,6 +30,7 @@ const run = code => transform(code, {
   test('TaggedTemplateExpression', (t) => {
     const input = stripIndent`
       import ms from './ms.macro';
+      const ZERO_DAYS = ms\`0 days\`;
       const ONE_DAY = ms\`1 day\`;
       const TWO_DAYS = ms\`2 days\`;
     `;
