@@ -16,7 +16,7 @@ export default createMacro(({ babel: { types: t }, references: { default: paths 
     const value = getValue(parentPath);
     if (value) {
       const newValue = ms(value);
-      if (newValue) {
+      if (typeof newValue === 'number' && !Number.isNaN(newValue)) {
         parentPath.replaceWith(t.numericLiteral(newValue));
       } else {
         const { line } = parentPath.node.loc.start;
